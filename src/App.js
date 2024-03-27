@@ -10,7 +10,7 @@ import CountdownTimers from "./CountdownTimerTwo";
 import useSound from 'use-sound';
 
 function App() {
-  const [playSound] = useSound('music.mp3');
+  // const [playSound] = useSound('music.mp3');
   const inputRef = useRef(null);
   useEffect(() => {
     const placeholderTexts = [
