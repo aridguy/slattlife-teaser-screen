@@ -7,7 +7,9 @@ import Swal from "sweetalert2";
 import SlattLogo from './slattlifeee.png'
 
 import CountdownTimers from "./CountdownTimerTwo";
-import useSound from 'use-sound';
+// import useSound from 'use-sound';
+import Marquee from "react-fast-marquee";
+
 
 function App() {
   // const [playSound] = useSound('music.mp3');
@@ -99,7 +101,7 @@ function App() {
           </div>
 
           <div className="--slider-box mt-3">
-            <marquee className="text-white maquee">
+            <Marquee pauseOnHover="true" className="text-white maquee">
               This Community Creative Website by Only1eric (itz_microsoft) is
               for creative and determine young people. It's purpose is to
               empower Nigerian's and youths all over the universe to connect to
@@ -109,7 +111,7 @@ function App() {
               Nigerian talents, Art Scene, Street+Style Fashion , Culture (Black
               Lives) and Empower Small Scale Businesses through the Community's
               Website. 🏁Website Design Interface; Reference By GO CRZY 🏁
-            </marquee>
+            </Marquee>
             <div className="text-white mt-5">
               <a
                 href="https://youtube.com/@slattlife01?si=U5M16G2ih9CKTIus
