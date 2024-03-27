@@ -80,15 +80,16 @@ input::placeholder {
 }
 
 .landing-image {
-  height: 9vw;
+  height: 3vw;
   width: auto;
   z-index: 12;
+  margin-top: 5em;
 }
 
 .--secondlevel-parent {
   position: absolute;
   z-index: 9999;
-  margin-top: 10em;
+  margin-top: 6em;
 }
 .cursor{
   cursor: pointer;
@@ -133,7 +134,7 @@ button {
 
 .press-start{
   font-family: "press Start 2P";
-  font-size: small;
+  font-size: x-small;
 }
 input:focus{
   background-color: transparent;
@@ -166,5 +167,25 @@ input:focus{
     width: 300px;
     text-align: center;
     z-index: 999;
+  }
+}
+
+
+/* Image to rotate horizontally */
+.rotate-image {
+  position: absolute; /* Position the image absolutely within the container */
+  top: 0; /* Position from the top of the container */
+  left: 50%; /* Move the image to the center horizontally */
+  transform: translateX(-50%); /* Center the image horizontally */
+  animation: rotateHorizontal 4s linear infinite; /* Apply the rotation animation */
+}
+
+/* Keyframes for horizontal rotation animation */
+@keyframes rotateHorizontal {
+  0% {
+    transform: translateX(-50%) rotateY(0deg); /* Initial position (no rotation) */
+  }
+  100% {
+    transform: translateX(-50%) rotateY(360deg); /* Final position (360 degree horizontal rotation) */
   }
 }

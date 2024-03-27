@@ -80,9 +80,9 @@ function App() {
     <div>
       <div className="app-container">
         <div className="--secondlevel-parent container">
-        <img width='30px' src={SlattLogo} alt="slattlogo" />
+        <img className="rotate-image mb-5" width='120px' src={SlattLogo} alt="slattlogo" /> <br />
           <img className="landing-image" src={Logo} alt="Brand-Name" />
-          <img width='30px' src={SlattLogo} alt="slattlogo" />
+         
           <p className="text-white mt-3 press-start">
             Be the first to get notification when <br /> 'PROJEKT PLUTO' <br />{" "}
             is launched
@@ -112,7 +112,7 @@ function App() {
               Lives) and Empower Small Scale Businesses through the Community's
               Website. 🏁Website Design Interface; Reference By GO CRZY 🏁
             </Marquee>
-            <div className="text-white mt-5">
+            <div className="text-white mt-2">
               <a
                 href="https://youtube.com/@slattlife01?si=U5M16G2ih9CKTIus
               "
