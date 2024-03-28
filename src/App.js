@@ -84,7 +84,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="glitch">
       <div className="app-container">
         <div className="--secondlevel-parent container">
           <img
