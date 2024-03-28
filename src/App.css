@@ -172,6 +172,10 @@ input:focus{
       /* position: relative;  */
       /* font-size: 7px; */
     }
+    .countdowns{
+      font-family: "Silkscreen", sans-serif;
+      font-size: 0.8em;
+    }
 
   .--secondlevel-parent {
     position: absolute;
@@ -212,6 +216,9 @@ input:focus{
   z-index: 9999 !important;
   position: relative;
   bottom: 12px;
+}
+.countdowns{
+  font-family: "press Start 2p";
 }
 @keyframes blink {
   0% {

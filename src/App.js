@@ -9,6 +9,7 @@ import SlattLogo from './slattlifeee.png'
 import CountdownTimers from "./CountdownTimerTwo";
 // import useSound from 'use-sound';
 import Marquee from "react-fast-marquee";
+import CountdownTimer from "./Countdown";
 
 
 function App() {
@@ -146,7 +147,7 @@ function App() {
             <div className="container">
               <div className="row">
                 <div className="col-md-12">
-                  <CountdownTimers />
+                  <CountdownTimer />
                 </div>
               </div>
             </div>
