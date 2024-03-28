@@ -189,12 +189,10 @@ input:focus{
 /* shadow effect for the start buttin */
 .text-with-glow {
   color: #fff; /* Text color */
-  /* White glowing shadow with reduced spread */
-  transition: 1s;
-}
-.text-with-glow:hover{
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff; 
+  /* transition: 1s; */
 }
+
 
 
 /* Image to rotate horizontally */
