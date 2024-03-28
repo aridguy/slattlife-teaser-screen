@@ -222,7 +222,7 @@ input:focus{
 /* start button animation with blink */
 .press-start {
   font-family: "press Start 2P";
-  font-size: 7px;
+  font-size: 8px;
   z-index: 9999 !important;
   position: relative;
   bottom: 12px;

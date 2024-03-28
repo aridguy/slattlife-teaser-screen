@@ -106,6 +106,7 @@ function App() {
               <span onClick={TriggerStart} className="starte text-with-glow">
                 Press Start
               </span>
+              <span className="starte text-with-glow blinking-text cursor fas fa-chevron-left"></span>
             </div>
           </div>
           <div className="--input-container">
