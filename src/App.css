@@ -36,6 +36,7 @@
     transform: rotate(360deg);
   }
 } */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Silkscreen:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
@@ -277,4 +278,9 @@ input:focus{
     transform: scale(1) rotate(0deg);
     opacity: 1;
   }
+}
+
+/* footer3 contents */
+.futs{
+  font-family: "teko";
 }
