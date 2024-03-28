@@ -86,7 +86,7 @@ function App() {
 
   // sound things
 
-  const [isSoundOn, setIsSoundOn] = useState(false);
+  const [isSoundOn, setIsSoundOn] = useState(true);
   const audioRef = useRef(null);
 
   const toggleSound = () => {
