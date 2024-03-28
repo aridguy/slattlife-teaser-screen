@@ -80,7 +80,7 @@ function App() {
     <div>
       <div className="app-container">
         <div className="--secondlevel-parent container">
-        <img className="rotate-image mb-5" width='120px' src={SlattLogo} alt="slattlogo" /> <br />
+        <img className="rotate-image mb-5" width='150px' src={SlattLogo} alt="slattlogo" /> <br />
           <img className="landing-image" src={Logo} alt="Brand-Name" />
          
           <p className="text-white mt-3 press-start">
