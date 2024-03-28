@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useEffect, useRef } from "react";
 import "./App.css";
 import Logo from "./images/brand-name-white.png";
@@ -84,11 +84,7 @@ function App() {
   };
 
   // sound things
-  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
-
-  const toggleMusic = () => {
-    setIsMusicPlaying((prevState) => !prevState);
-  };
+ 
 
   return (
     <div className="glitch">
