@@ -136,10 +136,6 @@ button {
 }
 
 
-.press-start{
-  font-family: "press Start 2P";
-  font-size: x-small;
-}
 input:focus{
   background-color: transparent;
 }
@@ -203,4 +199,32 @@ input:focus{
   100% {
     transform: translateX(-50%) rotateY(360deg); /* Final position (360 degree horizontal rotation) */
   }
+}
+.starte {
+  position: relative;
+  font-size: 2.5em;
+}
+
+/* start button animation with blink */
+.press-start {
+  font-family: "press Start 2P";
+  font-size: 7px;
+  z-index: 9999 !important;
+  position: relative;
+  bottom: 12px;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinking-text {
+  animation: blink 1s infinite; /* Adjust the duration as needed */
 }

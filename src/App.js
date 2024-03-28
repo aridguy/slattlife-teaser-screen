@@ -76,6 +76,14 @@ function App() {
     }
   };
 
+  const TriggerStart = () =>{
+    Swal.fire({
+      title: "Hey Slatt!",
+      text: "We are under construction!",
+      icon: "info",
+    });
+  }
+
   return (
     <div>
       <div className="app-container">
@@ -87,6 +95,12 @@ function App() {
             Be the first to get notification when <br /> 'PROJEKT PLUTO' <br />{" "}
             is launched
           </p>
+          <div className="relative text-center startBox">
+        <div  className="press-start cursor text-white">
+          <span  className="starte blinking-text cursor fas fa-chevron-right"></span>
+          &nbsp;<span onClick={TriggerStart} className="starte">Press Start</span>
+        </div>
+      </div>
           <div className="--input-container">
             <form>
               <input type="email" name="email" ref={inputRef} id="inputField" />{" "}
