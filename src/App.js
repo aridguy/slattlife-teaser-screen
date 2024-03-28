@@ -5,8 +5,6 @@ import Logo from "./images/brand-name-white.png";
 import axios from "axios";
 import Swal from "sweetalert2";
 import SlattLogo from './slattlifeee.png'
-
-import CountdownTimers from "./CountdownTimerTwo";
 // import useSound from 'use-sound';
 import Marquee from "react-fast-marquee";
 import CountdownTimer from "./Countdown";
