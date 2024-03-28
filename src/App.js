@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useEffect, useRef } from "react";
 import "./App.css";
 import Logo from "./images/brand-name-white.png";
@@ -83,6 +83,13 @@ function App() {
     });
   };
 
+  // sound things
+  const [isMusicPlaying, setIsMusicPlaying] = useState(false);
+
+  const toggleMusic = () => {
+    setIsMusicPlaying((prevState) => !prevState);
+  };
+
   return (
     <div className="glitch">
       <div className="app-container">
@@ -156,9 +163,15 @@ function App() {
                   <CountdownTimer />
                 </div>
                 <div className="col-md-12">
+                  <div style={{ display: "none" }}>
+                    <audio autoPlay loop={true}>
+                      <source src="/sound.mp3" type="audio/mp3" />
+                    </audio>
+                  </div>
                   <address className="text-white relative copyrights bottom-40 futs text-center">
                     &copy; SLATTLIFE 2024
                   </address>
+                
                 </div>
               </div>
             </div>
