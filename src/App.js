@@ -135,8 +135,11 @@ function App() {
               </button>
             </form>
           </div>
-          <div className="--slider-box mt-3">
-            <Marquee pauseOnHover="true" className="text-white maquee">
+          <div className="--slider-box">
+            <Marquee
+              pauseOnHover="true"
+              className="text-white maquee"
+            >
               This Community Creative Website by Only1eric (itz_microsoft) is
               for creative and determine young people. It's purpose is to
               empower Nigerian's and youths all over the universe to connect to
@@ -147,6 +150,8 @@ function App() {
               Lives) and Empower Small Scale Businesses through the Community's
               Website. 🏁Website Design Interface; Reference By GO CRZY 🏁
             </Marquee>
+          </div>
+          <div className=" mt-3 text-center">
             <div className="text-white mt-2">
               <a
                 href="https://youtube.com/@slattlife01?si=U5M16G2ih9CKTIus
