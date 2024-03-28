@@ -282,3 +282,14 @@ input:focus{
 .futs{
   font-family: "teko";
 }
+
+/* making sure audio is not visible by default */
+.hidden{
+  display: none;
+}
+
+.bigger{
+  font-size: 2em;
+  position: relative;
+  bottom: 0.8em;
+}

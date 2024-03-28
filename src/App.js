@@ -8,6 +8,7 @@ import SlattLogo from "./slattlifeee.png";
 // import useSound from 'use-sound';
 import Marquee from "react-fast-marquee";
 import CountdownTimer from "./Countdown";
+import Sounds from "./sound.mp3";
 
 function App() {
   // const [playSound] = useSound('music.mp3');
@@ -85,9 +86,16 @@ function App() {
 
   // sound things
 
-  const [isSoundOn, setIsSoundOn] = useState("fas fa-volume-xmark");
+  const [isSoundOn, setIsSoundOn] = useState(true);
+  const audioRef = useRef(null);
+
   const toggleSound = () => {
-    setIsSoundOn(prevState => !prevState);
+    setIsSoundOn((prevState) => !prevState);
+    if (isSoundOn) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
   };
   return (
     <div className="glitch">
@@ -175,8 +183,15 @@ function App() {
             </div>
           </div>
           <div>
-            <span className="text-white cursor" onClick={toggleSound}>
-              {isSoundOn ? <i className="fas fa-volume-xmark"></i> : <i class="fas fa-volume-high"></i>}
+            <audio className="display-none hidden" ref={audioRef} controls loop>
+              <source src={Sounds} type="audio/mp3" />
+            </audio>
+            <span className="text-white cursor bigger " onClick={toggleSound}>
+              {isSoundOn ? (
+                <i className="fas fa-volume-high"></i> // Change icon to pause when sound is on
+              ) : (
+                <i className=" fas fa-volume-xmark"></i> // Change icon to play when sound is off
+              )}
             </span>
           </div>
         </div>
