@@ -4,11 +4,10 @@ import "./App.css";
 import Logo from "./images/brand-name-white.png";
 import axios from "axios";
 import Swal from "sweetalert2";
-import SlattLogo from './slattlifeee.png'
+import SlattLogo from "./slattlifeee.png";
 // import useSound from 'use-sound';
 import Marquee from "react-fast-marquee";
 import CountdownTimer from "./Countdown";
-
 
 function App() {
   // const [playSound] = useSound('music.mp3');
@@ -75,31 +74,40 @@ function App() {
     }
   };
 
-  const TriggerStart = () =>{
+  // on press start
+  const TriggerStart = () => {
     Swal.fire({
       title: "Hey Slatt!",
       text: "We are under construction!",
       icon: "info",
     });
-  }
+  };
 
   return (
     <div>
       <div className="app-container">
         <div className="--secondlevel-parent container">
-        <img className="rotate-image mb-5" width='150px' src={SlattLogo} alt="slattlogo" /> <br />
+          <img
+            className="rotate-image mb-5"
+            width="150px"
+            src={SlattLogo}
+            alt="slattlogo"
+          />{" "}
+          <br />
           <img className="landing-image" src={Logo} alt="Brand-Name" />
-         
           <p className="text-white mt-3 press-start">
             Be the first to get notification when <br /> 'PROJEKT PLUTO' <br />{" "}
             is launched
           </p>
           <div className="relative text-center startBox">
-        <div  className="press-start cursor text-white">
-          <span  className="starte blinking-text cursor fas fa-chevron-right"></span>
-          &nbsp;<span onClick={TriggerStart} className="starte">Press Start</span>
-        </div>
-      </div>
+            <div className="press-start cursor text-white">
+              <span className="starte text-with-glow blinking-text cursor fas fa-chevron-right"></span>
+              &nbsp;
+              <span onClick={TriggerStart} className="starte text-with-glow">
+                Press Start
+              </span>
+            </div>
+          </div>
           <div className="--input-container">
             <form>
               <input type="email" name="email" ref={inputRef} id="inputField" />{" "}
@@ -112,7 +120,6 @@ function App() {
               </button>
             </form>
           </div>
-
           <div className="--slider-box mt-3">
             <Marquee pauseOnHover="true" className="text-white maquee">
               This Community Creative Website by Only1eric (itz_microsoft) is
@@ -149,7 +156,6 @@ function App() {
                 </div>
               </div>
             </div>
-         
           </div>
         </div>
       </div>
