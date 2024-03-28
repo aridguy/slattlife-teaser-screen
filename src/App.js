@@ -154,6 +154,11 @@ function App() {
                 <div className="col-md-12">
                   <CountdownTimer />
                 </div>
+                <div className="col-md-12">
+                  <address className="text-white relative copyrights bottom-40 startBox text-center">
+                    &copy; SLATTLIFE 2024
+                  </address>
+                </div>
               </div>
             </div>
           </div>
