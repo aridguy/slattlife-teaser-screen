@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useEffect, useRef } from "react";
 import "./App.css";
 import Logo from "./images/brand-name-white.png";
@@ -84,8 +84,11 @@ function App() {
   };
 
   // sound things
- 
 
+  const [isSoundOn, setIsSoundOn] = useState("fas fa-volume-xmark");
+  const toggleSound = () => {
+    setIsSoundOn(prevState => !prevState);
+  };
   return (
     <div className="glitch">
       <div className="app-container">
@@ -167,10 +170,14 @@ function App() {
                   <address className="text-white relative copyrights bottom-40 futs text-center">
                     &copy; SLATTLIFE 2024
                   </address>
-                
                 </div>
               </div>
             </div>
+          </div>
+          <div>
+            <span className="text-white cursor" onClick={toggleSound}>
+              {isSoundOn ? <i className="fas fa-volume-xmark"></i> : <i class="fas fa-volume-high"></i>}
+            </span>
           </div>
         </div>
       </div>
